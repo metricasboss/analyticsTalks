@@ -5,8 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-import React from "react"
-import { AuditoriaProvider } from "./src/context/Auditoria"
-export const wrapRootElement = ({ element }) => (
-  <AuditoriaProvider>{element}</AuditoriaProvider>
-)
