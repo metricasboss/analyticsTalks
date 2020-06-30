@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 
-const Card = ({ singlePost }) => (
+const Card = ({ singlePodcast }) => (
     <div className="column is-one-quarter">
         <div className="card ext">
             <div className="card-image">
-                <Link to={`/${singlePost.id}`}>
+                <Link to={`/${singlePodcast.id}`}>
                     <figure className="image">
-                            <Img fluid={singlePost.feature.childImageSharp.fluid}/>
+                            <Img fluid={singlePodcast.feature.childImageSharp.fluid}/>
                     </figure>
                 </Link>
             </div>
@@ -18,8 +18,8 @@ const Card = ({ singlePost }) => (
                     <div className="media-content">
                         <h3 className="title is-3 is-size-5">
                             <Link className="has-text-dark"
-                                  to={`/${singlePost.id}`}>
-                                  {singlePost.title}
+                                  to={`/${singlePodcast.id}`}>
+                                  {singlePodcast.title}
                             </Link>
                         </h3>
                     </div>
@@ -30,11 +30,11 @@ const Card = ({ singlePost }) => (
 )
 
 Card.propTypes = {
-    singlePost: PropTypes.object,
+    singlePodcast: PropTypes.object,
 }
 
 Card.defaultProps = {
-    singlePost: {},
+    singlePodcast: {},
 }
 
 export default Card

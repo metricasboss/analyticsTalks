@@ -15,8 +15,8 @@ const Header = () => {
     }
   `)
   return (
-    <div class="columns is-multiline is-centered is-mobile">
-      <div class="column  is-narrow brand--">
+    <div className="columns is-multiline is-centered is-mobile">
+      <div className="column  is-narrow brand--">
         <Img className="headshot" fixed={data.logo.childImageSharp.fixed} alt="headshot"/>
       </div>
     </div>

@@ -55,7 +55,7 @@ const IndexPage = ({data}) => (
     <section className="section wrapGrid-- is-relative">
       <div className="container">
         <h3 className="title is-size-3 has-text-centered"> Novos episódios toda terça-feira</h3>
-        <Grid posts={data.allStrapiArticle.edges} />
+        <Grid podcasts={data.podcasts.edges} />
       </div>
     </section>
   </Layout>
@@ -68,6 +68,28 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+
+    podcasts: allStrapiPodcast {
+      edges {
+        node {
+          id
+          title
+          feature {
+            id
+            childImageSharp {
+              fluid(maxWidth: 960) {
+                  ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          formats {
+            name
+            slug
+            id
+          }
+        }
       }
     }
 
@@ -103,35 +125,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allStrapiArticle(
-      filter: {categories: {elemMatch: {slug: {eq: "web-analytics"}}}},
-      limit: 4
-      ) {
-      edges {
-        node {
-          id,
-          title,
-          content,
-          feature {
-            id
-            childImageSharp {
-              fluid(maxWidth: 320) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          },
-          author {
-            id,
-            username
-          },
-          categories {
-            id,
-            name,
-            slug
-          }
-        }
-      }
-    }
+
   }
 `
 

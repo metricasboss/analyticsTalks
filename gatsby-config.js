@@ -17,9 +17,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://api.metricasboss.com.br`,
+        apiURL: `http://localhost:1337`, //api.metricasboss.com.br
         queryLimit: 1000, // Default to 100
-        contentTypes: [`article`, `user`, `category`],
+        contentTypes: [`article`, `user`, `category`, `podcast`],
       },
     },
     `gatsby-transformer-sharp`,
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "new.metricasboss.com.br",
+        bucketName: "analyticstalks.com.br",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

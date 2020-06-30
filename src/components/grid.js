@@ -3,20 +3,21 @@ import PropTypes from "prop-types"
 import React from "react"
 import Card from "./card"
 
-const Grid = ({ posts }) => (
+const Grid = ({ podcasts }) => (
+   
     <div className="columns">
-        {posts.map(document => (
-          <Card key={document.node.id} singlePost={document.node} />
+        {podcasts.map(document => (
+          <Card key={document.node.id} singlePodcast={document.node} />
         ))} 
     </div>
 )
 
 Grid.propTypes = {
-    posts: PropTypes.array,
+    podcasts: PropTypes.array,
 }
 
 Grid.defaultProps = {
-    posts: [],
+    podcasts: [],
 }
 
 export default Grid
