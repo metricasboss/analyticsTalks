@@ -17,9 +17,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`, //api.metricasboss.com.br
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`article`, `user`, `category`, `podcast`],
+        apiURL: `https://api.metricasboss.com.br`, //
+        queryLimit: 100, // Default to 100
+        contentTypes: [`category`, `podcast`],
       },
     },
     `gatsby-transformer-sharp`,

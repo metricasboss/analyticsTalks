@@ -7,7 +7,7 @@ const Card = ({ singlePodcast }) => (
     <div className="column is-one-quarter">
         <div className="card ext">
             <div className="card-image">
-                <Link to={`/${singlePodcast.id}`}>
+                <Link to={`/${singlePodcast.slug}`}>
                     <figure className="image">
                             <Img fluid={singlePodcast.feature.childImageSharp.fluid}/>
                     </figure>
@@ -18,7 +18,7 @@ const Card = ({ singlePodcast }) => (
                     <div className="media-content">
                         <h3 className="title is-3 is-size-5">
                             <Link className="has-text-dark"
-                                  to={`/${singlePodcast.id}`}>
+                                  to={`/${singlePodcast.slug}`}>
                                   {singlePodcast.title}
                             </Link>
                         </h3>
