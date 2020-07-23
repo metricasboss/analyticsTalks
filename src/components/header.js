@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      logo: file(relativePath: { eq: "logo-deep-growth-transparente-300x300.png" }) {
+      logo: file(relativePath: { eq: "logo-analyticsTalks-invert.png" }) {
         childImageSharp {
           fixed(width: 179) {
             ...GatsbyImageSharpFixed
