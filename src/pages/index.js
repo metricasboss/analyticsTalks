@@ -13,25 +13,25 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <div className="wrapContent--">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <section className="section">
+      <section className="section sectionAnalyticsTalks">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-two-thirds has-text-centered">
-              <h1 className="title is-size-2 has-text-white">O podcast que te ajudará a tomar decisões com <br />- achimos e + dados</h1>
+              <h1 className="title titleAnalyticsTalks has-text-white">O podcast que te ajudará a tomar<br/>decisões com - achimos e + dados.</h1>
               <div className="columns is-centered">
                 <div className="column">
-                  <h2 className="subtitle is-size-4 has-text-white">Criado em 2015, o podcast da Métricas Boss é um podcast que aborda temas relacionados a Web Analytics. Publicado mensalmente, o podcast da Métricas Boss visa divertir, informar e provocar reflexões sobre mercado de Web analytics do Brasil. O podcast faz parte do blog da Métricas Boss, um blog que reúne o que há de novidade no mercado de Web analytics.</h2>
+                  <h2 className="subtitle subtitleAnalyticsTalks has-text-white">Criado em 2015, o podcast da Métricas Boss é um podcast que aborda temas relacionados a Web Analytics. Publicado mensalmente, o podcast da Métricas Boss visa divertir, informar e provocar reflexões sobre mercado de Web analytics do Brasil. O podcast faz parte do blog da Métricas Boss, um blog que reúne o que há de novidade no mercado de Web analytics.</h2>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section sectionAnalyticsTalks">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-three-quarters">
-              <h3 className="subtitle is-size-5 has-text-centered has-text-white">Patrocínio:</h3>
+              <h3 className="subtitle analyticsTalksPatrocinio has-text-centered has-text-white">Patrocínio:</h3>
               <div className="columns is-vcentered">
                 <div className="column">
                   <Img className="headshot" fixed={data.prime.childImageSharp.fixed} alt="headshot"/>  

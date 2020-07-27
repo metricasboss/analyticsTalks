@@ -7,7 +7,7 @@
 .wrapContent-- {
     background: url('../images/bg-header-analyticsTalks.png') no-repeat;
     background-size: cover;
-    max-height: 860px;
+    max-height: 750px;
 }
 
 .wrapGrid-- {
@@ -15,4 +15,21 @@
 }
 .footer{
     top: 10rem;
+}
+
+.titleAnalyticsTalks {
+	font-size: 3rem;
+	font-family: 'Roboto';
+}
+
+.subtitleAnalyticsTalks {
+	font-size: 1.4rem;
+}
+
+.sectionAnalyticsTalks {
+	padding: 1.5rem;
+}
+
+.analyticsTalksPatrocinio {
+	margin-bottom: 0!important;
 }
