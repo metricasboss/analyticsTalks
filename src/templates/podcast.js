@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from "../components/seo"
+import Reactmarkdown from "react-markdown"
 
 const PodcastTemplate = ({ data }) => (
   <Layout>
@@ -12,7 +13,7 @@ const PodcastTemplate = ({ data }) => (
                     <div className="tile is-parent is-8">
                         <div className="tile is-child box">
                             <h1 className="title">{data.strapiPodcast.title}</h1>
-                            <p>{data.strapiPodcast.content}</p>
+                            <Reactmarkdown source={data.strapiPodcast.content} escapeHtml={false}/>
                         </div>
                     </div>
                     <div className="tile is-parent is-4 is-vertical">
