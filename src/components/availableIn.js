@@ -47,7 +47,7 @@ const AvaibleIn = () => {
             <div className="container">
                 <div className="columns is-centered">
                     <div className="column is-full " style={{padding: '0px 20px'}}>
-                        <h3 className="subtitle is-size-5 has-text-centered has-text-grey-darker">Disponívels nas plataformas</h3>
+                        <h3 className="subtitle is-size-5 has-text-centered has-text-white">Disponívels nas plataformas</h3>
                         <div className="columns is-vcentered">
                         <div className="column">
                             <Img className="headshot" fixed={data.apple.childImageSharp.fixed} alt="headshot"/>
