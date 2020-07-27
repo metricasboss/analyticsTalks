@@ -4,9 +4,10 @@
 @import './header.scss';
 @import './availableIn.scss';
 
+body {background-color: #fafafa}
+
 .wrapContent-- {
-    background: url('../images/bg-header-analyticsTalks.png') no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(270deg, #c20694 0%, #0cdfd5 100%);
     max-height: 750px;
 }
 
@@ -30,6 +31,11 @@
 	padding: 1.5rem;
 }
 
-.analyticsTalksPatrocinio {
-	margin-bottom: 0!important;
+.analyticsTalksPatrocinio{
+	h3 {
+		margin-bottom: 0!important;
+	}
+	.headshot {
+		margin: 20px 0;
+	}
 }

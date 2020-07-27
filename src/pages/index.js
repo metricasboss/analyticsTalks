@@ -29,9 +29,9 @@ const IndexPage = ({data}) => (
       </section>
       <section className="section sectionAnalyticsTalks">
         <div className="container">
-          <div className="columns is-centered">
+          <div className="columns is-centered analyticsTalksPatrocinio">
             <div className="column is-three-quarters">
-              <h3 className="subtitle analyticsTalksPatrocinio has-text-centered has-text-white">Patrocínio:</h3>
+              <h3 className="subtitle has-text-centered has-text-white">Patrocínio</h3>
               <div className="columns is-vcentered">
                 <div className="column">
                   <Img className="headshot" fixed={data.prime.childImageSharp.fixed} alt="headshot"/>  
@@ -96,7 +96,7 @@ export const pageQuery = graphql`
 
     prime: file(relativePath: { eq: "logo_prime.png" }) {
       childImageSharp {
-        fixed(width: 200) {
+        fixed(width: 194) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -104,7 +104,7 @@ export const pageQuery = graphql`
 
     ecrj: file(relativePath: { eq: "ecrj.png" }) {
       childImageSharp {
-        fixed(width: 201) {
+        fixed(width: 210) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -112,7 +112,7 @@ export const pageQuery = graphql`
 
     bora: file(relativePath: { eq: "boravender.png" }) {
       childImageSharp {
-        fixed(width: 200) {
+        fixed(width: 140) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -120,7 +120,7 @@ export const pageQuery = graphql`
    
     punk: file(relativePath: { eq: "punk.png" }) {
       childImageSharp {
-          fixed(width: 171) {
+          fixed(width: 174) {
           ...GatsbyImageSharpFixed
           }
       }
