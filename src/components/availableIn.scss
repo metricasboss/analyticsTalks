@@ -9,3 +9,10 @@
     }
     .player { text-align: center }
 }
+
+@media (max-width: 800px) {
+	.availableIn--{
+    	top: 3.5rem;
+    	padding: 0!important;
+    }
+}

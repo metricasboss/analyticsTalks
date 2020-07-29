@@ -13,7 +13,7 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <div className="wrapContent--">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <section className="section sectionAnalyticsTalks">
+      <section className="section sectionAnalyticsTalks hero">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-two-thirds has-text-centered">

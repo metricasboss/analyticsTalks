@@ -7,7 +7,7 @@ const Header = () => {
     query HeaderQuery {
       logo: file(relativePath: { eq: "logo-analyticsTalks-invert.png" }) {
         childImageSharp {
-          fixed(width: 179) {
+          fixed(width: 220) {
             ...GatsbyImageSharpFixed
           }
         }
