@@ -17,8 +17,16 @@ body {background-color: #fafafa}
 	}
 }
 
+.podcastHeader {
+	.brand-- {
+		margin-bottom: 2.5rem;
+	}
+}
+
+.podcastContent iframe { margin-top: 2rem }
+
 .wrapGrid-- {
-    top: 8rem;
+    margin-top: 140px;
 }
 
 .hero{
@@ -53,7 +61,8 @@ body {background-color: #fafafa}
 
 @media (max-width: 800px) {
 	.wrapGrid-- {
-	    top: 26rem;
+	    margin-top: 400px;
+	    position: initial;
 	}
 	.titleAnalyticsTalks {
 		font-size: 2.3rem;

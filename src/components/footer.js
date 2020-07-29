@@ -16,7 +16,7 @@ const Footer = () => {
     }
   `)
   return (
-    <footer className="footer is-relative has-text-centered">
+    <footer className="footer has-text-centered">
       <Link to='https://metricasboss.com.br/'>
         <Img className="headshot" fixed={data.logoFooter.childImageSharp.fixed} alt="headshot"/>
       </Link>
